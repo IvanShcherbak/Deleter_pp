@@ -1,8 +1,12 @@
 from telethon.sync import TelegramClient
 
-api_id = 13381418
-api_hash = '5e996b084179f5841b224a34d6de47ca'
-phone_number = '89152427309'
+api_id = None  #take your API_id from Telegram and write in this field
+api_hash = None   #take your API_hash from Telegram and write in this field
+phone_number = input('Enter your phone number: ')
+if  api_id == None:
+    print("Enter correct api_id")
+if api_hash == None:
+    print("Enter correct api_hash")
 
 if __name__ == '__main__':
     client = TelegramClient('history_lurker', api_id=api_id, api_hash=api_hash)
